@@ -6,28 +6,27 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
-    />
+      content="Web site created using create-react-app"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/635a4f23de.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
 
     <title>Kitanda do Vitor</title>
 
   </head>
   <body>
 
-   
-
-    <div class="fundo" style="display: none;">  <!--Fundo 1 // desing de dois tringulos em foto-->
-
-        <img class="imagFundo" src="./src/Imagem/triangulo-reto (1).png" alt="Desine de fundo">
-        <img class="imagCima" src="./src/Imagem/triangulo-reto-cima.png" alt="Desine de fundo">
-    </div>
-
 
     <div> <!--Fundo 2 //foto de morangos-->
         
         <div class="fundo">
 
-            <img  src="./src/Imagem/mercadoria/morangos-maior.jpg" alt="Desine de fundo" style="width: 210vh;">
+            <img  src="https://github.com/Raque-lVi/mercado-site-react/blob/master/src/Imagem/mercadoria/morangos-maior.jpg?raw=true" alt="Desine de fundo" style="width: 210vh;">
         </div>
         <!--NOME DE FUNDO E CURTINA--><!--NOME DE FUNDO E CURTINA--><!--NOME DE FUNDO E CURTINA-->
 
@@ -44,130 +43,17 @@
     <!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO-->
 
 
-    <header class="cabecalho">
-        <a href="./carrinho.html">
-            <!-- o objetivo aqui é fazer com que quando a pessoa faça compras o carrinho fique
-            cheio e quand ela não efetuou a compra o carrinho fica vazio-->
-            <img class="carrinhoVazio" src="./src/Imagem/carrinho-de-compras-de-design-xadrez.png"
-                alt="carrinho de compras" >
-
-            <!-- se (pesquisa no banco de dados pelos produtos de compra == não efetuada compra 
-                    porem produtos no carrinho para possivel compra){
-                    imagem de carrinho cheio.setVisible()
-                    }else{imagem de carrinho vasio.setVisible}
-                -->
-        </a>
-
-        <!--Botoes do cabeçario-->
-
-        <nav>
-            <ul class="botoes-menu">
-
-                <li> <a href="./"> QUEM SOMOS?</a></li>
-
-                <li> <a href="./paginaVendas.html"> PRODUTOS </a></li>
-
-                <li> <a href="./login.html"> ENTRE </a></li>
-
-            </ul>
-        </nav>
-    </header>
-
+    <div id="root"></div>
 
     <!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN-->
     <!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN-->
 
 
-    <main>
-
-        
-
-        <section class="Pagamentos"> <!--section 1 // informaçoes de pagamentos-->
-            <h1 style="text-align: center; margin-bottom: 10px; ">PAGAMENTO:</h1>
+    
 
             <!--Caixas com informaçoes de pagamentos-->
 
-            <div id="conteine-de-divs">
-
-                <div id="div_pagamentos" class="lat">
-                    <h3 class="h3_pagamentos">PIX</h3>
-                </div>
-                <div id="div_pagamentos" class="mei">
-                    <h3 class="h3_pagamentos">DINHEIRO</h3>
-                </div>
-                <div id="div_pagamentos" class="lat">
-
-                    <h3 class="h3_pagamentos">CARTÃO</h3>
-
-                    <!--icones de bandeira dos cartoes-->
-                    <div class="div_cartao_bandeiras">
-
-                        <a href="" class="i"><i class="fa-brands fa-cc-mastercard" style="color: #42c449;"></i></a>
-                        <a href="" class="i"><i class="fa-brands fa-cc-visa" style="color: #42c449;"></i></a>
-                        <a href="" class="i"><i class="fa-brands fa-cc-amex" style="color: #42c449;"></i></a>
-                        <p style="font-size: 20px; padding: 10px;">...</p>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="produto-De-Pagamento"> <!--section 2 // Detalhes das informaçoes de pagamento + pix-->
-
-
-            <div style="border: 3px black solid; border-left: none; border-bottom: none; border-top: none;">
-
-                <h3 class="h3_produto">Pix</h3>
-
-                <!--pix-->
-
-                <div class="pix_QRcode_Telefone">
-                    <ul class="pix_telefone">
-
-                        <li class="li_pix">
-                            <p class="nome1">Chave: </p>
-                            <p class="nome2" title="Telefone"> (84) 996247885 </p>
-                        </li>
-                        <li class="li_pix">
-                            <p class="nome1">Nome: </p>
-                            <p class="nome2"> Manoel Vitoriano Dantas </p>
-                        </li>
-                    </ul>
-
-                    <ul class="pix_QRcode">
-                        <li class="li_pix"><img class="img_qrcod" src="./src/Imagem/qrcod.png" alt=""></li>
-                        <li class="li_pix">
-                            <p class="nome1">Nome: </p>
-                            <p class="nome2"> Vivian Raquel Batista Dantas</p>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-            </div>
-
-            <!--Pagamento por cartao-->
-
-            <div class="produto_cartao">
-                <h3 class="h3_produto">CARTÃO</h3>
-                <ul class="lu_pix">
-                    <li class="li_pix">
-                        <p class="nome1">Maquininha: </p>
-                        <p class="nome2">Ton</p>
-                    </li>
-                    <li class="li_pix">
-                        <p class="nome1">Bandeiras Aceitas: </p>
-<p style="white-space: pre-wrap;" class="nome2">
-MasterCard, HiperCard
-Visa, Amex
-Elo
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        
 
         <a href="">
             <h3 class="pedido" style="text-align: center; text-transform: uppercase; padding-top: 20px; ">Faça Ja o Seu Pedido!!</h3>
@@ -253,7 +139,7 @@ Elo
     </footer>
 
 
-    <div id="root"></div>
+    
 
 
   </body>
